@@ -1,0 +1,75 @@
+// main: styles.less
+
+main {
+	.main-banner1 {
+		background: white;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (max-width: @phone) {
+			flex-direction: column;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		@media (min-width: 768px) {
+			padding-left: 13%;
+			padding-right: 13%;
+			height: 436px;
+		}
+
+		.circle {
+			width: 100px;
+			height: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			border: 2px solid black; 
+			border-radius: 100px;
+			border-color: black;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+
+		.title-text {
+			font: 700 18px @lato;
+			color: black;
+			text-transform: uppercase;
+			position: relative;
+			display: inline-block;
+		}
+
+		.title-text:after {
+			content: "";
+			position: absolute;
+			bottom: -5px;
+			left: 47%;
+			width: 66%;
+			height: 1px;
+			margin-left: -30%;
+			background: #f57365;
+		}
+
+		.info-text {
+			font: 400 16px @lato;
+			text-align: center;
+			color: #444444;
+			margin-top: 19px;
+
+			@media (max-width: @phone) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.main-banner1-first, .main-banner1-second, .main-banner1-third {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-basis: 33%;
+	flex-wrap: wrap;
+}

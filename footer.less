@@ -1,0 +1,48 @@
+// main: styles.less
+
+footer {
+
+	@media (min-width: 768px) {
+		height: 92px;
+	}
+	
+	border-top: 1px solid #e2e2e2;
+	background: #f7f7f7;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@media (max-width: @phone) {
+		flex-direction: column;
+	}
+
+	.company {
+		font: 400 14px @lato;
+		color: #cfcfcf;
+
+		@media (min-width: 768px) {
+			margin-left: 13%;
+		}
+
+		@media (max-width: @phone) {
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.autor {
+		font: 400 14px @lato;
+		color: #cfcfcf;
+
+		@media (min-width: 768px) {
+			margin-right: 13%;
+			letter-spacing: 2px;
+		}
+
+		@media (max-width: @phone) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

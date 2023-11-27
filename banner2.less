@@ -1,0 +1,113 @@
+// main: styles.less
+
+main {
+	.main-banner2 {
+		background: #f7f7f7;
+		display: flex;
+
+		@media (min-width: 768px) {
+			padding-left: 12%;
+			padding-right: 12%;
+			height: 880px;
+		}
+
+		@media (max-width: @phone) {
+			flex-direction: column;
+		}
+		flex-shrink:0; flex-grow:0;
+
+		.main-banner2-left { 
+			@media (min-width: 768px) {
+				align-self: flex-end;
+				flex-basis: 50%;
+			}
+
+			@media (max-width: @phone) {
+				display: flex;
+				justify-content: center;
+
+				img {
+					width: 80%;
+					margin-top: 30px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		.main-banner2-right {
+			@media (min-width: 768px) {
+				flex-basis: 50%;
+				align-self: center;
+			}
+
+			@media (max-width: @phone) {
+				width: 90%;
+				align-self: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+			}
+
+			.title-text {
+				font: 700 18px @lato;
+				color: black;
+				text-transform: uppercase;
+				position: relative;
+				display: inline-block;
+
+				@media (max-width: @phone) {
+					text-align: center;
+				}
+			}
+
+			.title-text:after {
+				content: "";
+				position: absolute;
+
+				@media (min-width: 768px) {
+					bottom: -5px;
+					left: 30%;
+					width: 33%;
+					height: 1px;
+					margin-left: -30%;
+				}
+
+				@media (max-width: @phone) {
+					bottom: -5px;
+					left: 50%;
+					width: 33%;
+					height: 1px;
+					margin-left: -16%;
+				}
+
+				background: #f57365;
+			}
+
+			.info-text {
+				font: 400 16px @lato;
+				color: #444444;
+				margin-top: 20px;
+
+				@media (max-width: @phone) {
+					text-align: center;
+				}
+			}
+
+			.phone-market-link {
+				display: flex;
+				flex-direction: row;
+				margin-top: 30px;
+				flex-wrap: wrap;
+
+				@media (max-width: @phone) {
+					justify-content: center;
+				}
+
+				a {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
