@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 11</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="canonical" href="index.html" />
+        <meta name="viewport" content="width=device-width" />
+
+        <style amp-boilerplate>
+            body {
+              -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+              -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+              -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+              animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            }
+            @-webkit-keyframes -amp-start {
+              from {
+                visibility: hidden;
+              }
+              to {
+                visibility: visible;
+              }
+            }
+            @-moz-keyframes -amp-start {
+              from {
+                visibility: hidden;
+              }
+              to {
+                visibility: visible;
+              }
+            }
+            @-ms-keyframes -amp-start {
+              from {
+                visibility: hidden;
+              }
+              to {
+                visibility: visible;
+              }
+            }
+            @-o-keyframes -amp-start {
+              from {
+                visibility: hidden;
+              }
+              to {
+                visibility: visible;
+              }
+            }
+            @keyframes -amp-start {
+              from {
+                visibility: hidden;
+              }
+              to {
+                visibility: visible;
+              }
+            }
+        </style>
+        <noscript>
+            <style amp-boilerplate>
+              body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none;
+              }
+            </style>
+        </noscript>
+
+        <style amp-custom>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .upper_menu a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-family: "Lato", sans-serif;
+            }
+            .upper_menu li {
+                display: inline;
+                list-style: none;
+                text-transform: uppercase;
+                margin-left: 30px;
+            }
+            header {
+                padding-top: 20px;
+                padding-left: 13%;
+                padding-right: 13%;
+                background: url(materials/main_image.png);
+                background-size: cover;
+                height: 880px;
+            }
+            .logo h1 {
+                display: block;
+                width: 80px;
+                height: 80px;
+                background: center / contain no-repeat url(materials/logo.png);
+                font-size: 0;
+            }
+            .up_menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .main_header {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                flex-grow: 0;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 767px) {
+                .main_header .header-text1 {
+                    font: italic 700 24px "Times New Roman", serif;
+                    color: white;
+                }
+            }
+            @media (min-width: 768px) {
+                .main_header .header-text1 {
+                    font: italic 700 36px "Times New Roman", serif;
+                    color: white;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .main_header .header-text2 {
+                    font: 700 60px "Lato", sans-serif;
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+            @media (min-width: 768px) {
+                .main_header .header-text2 {
+                    font: 700 100px "Lato", sans-serif;
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+
+            .main_header .header-text3 {
+                margin-top: 40px;
+                margin-bottom: 70px;
+            }
+            .main_header .header-text4 {
+                font: 400 14px "Lato", sans-serif;
+                text-transform: uppercase;
+                color: white;
+            }
+            @media (max-width: 767px) {
+                .main_header .header-text4 {
+                    text-align: center;
+                }
+            }
+            .main_header .header-text4-link {
+                font: 700 14px "Lato", sans-serif;
+                text-transform: uppercase;
+                color: white;
+            }
+
+            @media (max-width: 767px) {
+                .main_header .btn_start {
+                    font: 700 15px "Lato", sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    border: 3px solid white;
+                    padding: 17px 74px 22px 72px;
+                }
+            }
+            @media (min-width: 768px) {
+                .main_header .btn_start {
+                    font: 700 15px "Lato", sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    border: 3px solid white;
+                    padding: 22px 79px 27px 77px;
+                }
+            }
+
+            main .main-banner1 {
+                background: white;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            @media (max-width: 767px) {
+                main .main-banner1 {
+                    flex-direction: column;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+            }
+            @media (min-width: 768px) {
+                main .main-banner1 {
+                    padding-left: 13%;
+                    padding-right: 13%;
+                    height: 436px;
+                }
+            }
+            main .main-banner1 .circle {
+                width: 100px;
+                height: 100px;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                border: 2px solid black;
+                border-radius: 100px;
+                border-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            main .main-banner1 .title-text {
+                font: 700 18px "Lato", sans-serif;
+                color: black;
+                text-transform: uppercase;
+                position: relative;
+                display: inline-block;
+            }
+            main .main-banner1 .title-text:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 47%;
+            width: 66%;
+            height: 1px;
+            margin-left: -30%;
+            background: #f57365;
+            }
+            main .main-banner1 .info-text {
+            font: 400 16px "Lato", sans-serif;
+            text-align: center;
+            color: #444444;
+            margin-top: 19px;
+            }
+            @media (max-width: 767px) {
+            main .main-banner1 .info-text {
+                margin-bottom: 20px;
+            }
+            }
+            .main-banner1-first,
+            .main-banner1-second,
+            .main-banner1-third {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-basis: 33%;
+            flex-wrap: wrap;
+            }
+            main .main-banner2 {
+            background: #f7f7f7;
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 0;
+            }
+            @media (min-width: 768px) {
+            main .main-banner2 {
+                padding-left: 12%;
+                padding-right: 12%;
+                height: 880px;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 {
+                flex-direction: column;
+            }
+            }
+            @media (min-width: 768px) {
+            main .main-banner2 .main-banner2-left {
+                align-self: flex-end;
+                flex-basis: 50%;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-left {
+                display: flex;
+                justify-content: center;
+            }
+            main .main-banner2 .main-banner2-left amp-img {
+                width: 80%;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            }
+            @media (min-width: 768px) {
+            main .main-banner2 .main-banner2-right {
+                flex-basis: 50%;
+                align-self: center;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-right {
+                width: 90%;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            }
+            main .main-banner2 .main-banner2-right .title-text {
+            font: 700 18px "Lato", sans-serif;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-right .title-text {
+                text-align: center;
+            }
+            }
+            main .main-banner2 .main-banner2-right .title-text:after {
+            content: "";
+            position: absolute;
+            background: #f57365;
+            }
+            @media (min-width: 768px) {
+            main .main-banner2 .main-banner2-right .title-text:after {
+                bottom: -5px;
+                left: 30%;
+                width: 33%;
+                height: 1px;
+                margin-left: -30%;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-right .title-text:after {
+                bottom: -5px;
+                left: 50%;
+                width: 33%;
+                height: 1px;
+                margin-left: -16%;
+            }
+            }
+            main .main-banner2 .main-banner2-right .info-text {
+            font: 400 16px "Lato", sans-serif;
+            color: #444444;
+            margin-top: 20px;
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-right .info-text {
+                text-align: center;
+            }
+            }
+            main .main-banner2 .main-banner2-right .phone-market-link {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            }
+            @media (max-width: 767px) {
+            main .main-banner2 .main-banner2-right .phone-market-link {
+                justify-content: center;
+            }
+            }
+            main .main-banner2 .main-banner2-right .phone-market-link a {
+            margin-right: 10px;
+            }
+            main .main-banner3 {
+            display: flex;
+            flex-direction: column;
+            height: 460px;
+            background: center / contain no-repeat url(materials/background-review.png), #4a3949;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            }
+            main .main-banner3 amp-img {
+            width: 114px;
+            align-self: center;
+            margin-bottom: 20px;
+            }
+            main .main-banner3 .message {
+            font: 100 30px "Lato", sans-serif;
+            text-align: center;
+            color: #867b85;
+            }
+            main .main-banner3 .autor {
+            font: 100 18px "Lato", sans-serif;
+            font-style: italic;
+            text-align: center;
+            color: #867b85;
+            }
+            main .main-banner3 .points {
+            align-self: center;
+            margin-top: 40px;
+            }
+            main .main-banner3 .points amp-img {
+            width: 10px;
+            }
+            main .main-banner3 .points a {
+            margin-left: 2px;
+            margin-right: 2px;
+            }
+            main .main-banner4 .title-block {
+            height: 165px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            }
+            main .main-banner4 .title-block p {
+            font: 700 18px "Lato", sans-serif;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            margin-top: 100px;
+            align-self: center;
+            }
+            main .main-banner4 .title-block p:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 47%;
+            width: 66%;
+            height: 1px;
+            margin-left: -30%;
+            background: #f57365;
+            }
+            main .main-banner4 .eat-block {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            column-gap: 0px;
+            }
+            @media (min-width: 768px) {
+            main .main-banner4 .eat-block {
+                height: 450px;
+            }
+            }
+            main .main-banner4 .eat-block .eat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            }
+            @media (min-width: 768px) {
+            main .main-banner4 .eat-block .eat {
+                flex-basis: 20%;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner4 .eat-block .eat {
+                flex-basis: 50%;
+            }
+            }
+            main .main-banner4 .eat-block .eat .title {
+            font: 700 36px "Lato", sans-serif;
+            color: white;
+            }
+            main .main-banner4 .eat-block .eat .info {
+            font: 400 15px "Lato", sans-serif;
+            font-style: italic;
+            color: white;
+            }
+            main .main-banner4 .statistic-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            }
+            @media (min-width: 768px) {
+            main .main-banner4 .statistic-block {
+                flex-direction: row;
+                height: 175px;
+                margin-left: 13%;
+                margin-right: 13%;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner4 .statistic-block {
+                margin-bottom: 20px;
+            }
+            }
+            @media (max-width: 767px) {
+            main .main-banner4 .statistic-block .statistic {
+                flex-basis: 50%;
+            }
+            }
+            main .main-banner4 .statistic-block .statistic .title {
+            font: 700 36px "Lato", sans-serif;
+            color: black;
+            text-align: center;
+            }
+            @media (max-width: 767px) {
+            main .main-banner4 .statistic-block .statistic .title {
+                margin-top: 10px;
+            }
+            }
+            main .main-banner4 .statistic-block .statistic .info {
+            font: 400 16px "Lato", sans-serif;
+            color: #999999;
+            text-align: center;
+            }
+            #eat1 {
+            background: center / contain no-repeat url(materials/eat1.png);
+            background-size: 100%;
+            }
+            #eat2 {
+            background: center / contain no-repeat url(materials/eat2.png);
+            background-size: 100%;
+            }
+            #eat3 {
+            background: center / contain no-repeat url(materials/eat3.png);
+            background-size: 100%;
+            }
+            #eat4 {
+            background: center / contain no-repeat url(materials/eat4.png);
+            background-size: 100%;
+            }
+            #eat5 {
+            background: center / contain no-repeat url(materials/eat5.png);
+            background-size: 100%;
+            }
+            #eat6 {
+            background: center / contain no-repeat url(materials/eat6.png);
+            background-size: 100%;
+            }
+            #eat7 {
+            background: center / contain no-repeat url(materials/eat7.png);
+            background-size: 100%;
+            }
+            #eat8 {
+            background: center / contain no-repeat url(materials/eat8.png);
+            background-size: 100%;
+            }
+            #eat9 {
+            background: center / contain no-repeat url(materials/eat9.png);
+            background-size: 100%;
+            }
+            #eat10 {
+            background: center / contain no-repeat url(materials/eat10.png);
+            background-size: 100%;
+            }
+            footer {
+            border-top: 1px solid #e2e2e2;
+            background: #f7f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            }
+            @media (min-width: 768px) {
+            footer {
+                height: 92px;
+            }
+            }
+            @media (max-width: 767px) {
+            footer {
+                flex-direction: column;
+            }
+            }
+            footer .company {
+            font: 400 14px "Lato", sans-serif;
+            color: #cfcfcf;
+            }
+            @media (min-width: 768px) {
+            footer .company {
+                margin-left: 13%;
+            }
+            }
+            @media (max-width: 767px) {
+            footer .company {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            }
+            footer .autor {
+            font: 400 14px "Lato", sans-serif;
+            color: #cfcfcf;
+            }
+            @media (min-width: 768px) {
+            footer .autor {
+                margin-right: 13%;
+                letter-spacing: 2px;
+            }
+            }
+            @media (max-width: 767px) {
+            footer .autor {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            }
+        </style>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="up_menu">
+                <div class="logo">
+                    <h1>IFUD</h1>
+                </div>
+                
+                <nav>
+                    <div class="upper_menu">
+                        <ul>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">&#9776;</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main_header">
+                <span class="header-text1">Find your Favorite</span>
+                <span class="header-text2">Recipes</span>
+                <span class="header-text3"><a href="#" class="btn_start">GET STARTED</a></span>
+                <span class="header-text4">or send us your own recipes and <a href="#" class="header-text4-link">get rewarded</a>!</span>
+            </div>
+        </header>
+        <main>
+            <div class="main-banner1">
+                <div class="main-banner1-first">
+                    <div class="circle">
+                        <amp-img
+                            src="materials/burger.png"
+                            width="60"
+                            height="60"
+                        ></amp-img>
+                        <!-- <img alt="burger" src="materials/burger.png"> -->
+                    </div>
+                    <span class="title-text">get inspired</span>
+                    <p class="info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc<br>
+                        Pellentesque vel enim a elit viverra elementuma.<br>
+                        Aliquam erat volutpat.</p>
+                </div>
+                <div class="main-banner1-second">
+                    <div class="circle">
+                        <amp-img
+                            src="materials/money.png"
+                            width="60"
+                            height="32"
+                        ></amp-img>
+                        <!-- <img alt="money" src="materials/money.png"> -->
+                    </div>
+                    <span class="title-text">get rewarded</span>
+                    <p class="info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc<br>
+                        Pellentesque vel enim a elit viverra elementuma.<br>
+                        Aliquam erat volutpat.</p>
+                </div>
+                <div class="main-banner1-third">
+                    <div class="circle">
+                        <amp-img
+                            src="materials/chief.png"
+                            width="60"
+                            height="60"
+                        ></amp-img>
+                        <!-- <img alt="chief" src="materials/chief.png"> -->
+                    </div>
+                    <span class="title-text">get social</span>
+                    <p class="info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc<br>
+                        Pellentesque vel enim a elit viverra elementuma.<br>
+                        Aliquam erat volutpat.</p>
+                </div>
+            </div>
+
+            <div class="main-banner2">
+                <div class="main-banner2-left">
+                    <amp-img
+                            src="materials/phone.png"
+                            layout="intrinsic"
+                            width="548"
+                            height="779"
+                    ></amp-img>
+                    <!-- <img alt="phone" src="materials/phone.png" style="display: block;"> -->
+                </div>
+                <div class="main-banner2-right">
+                    <span class="title-text">INTRODUCING THE FUDI APP</span>
+                    <p class="info-text">
+                        Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet<br>
+                        felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest<br>
+                        ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
+                        <br><br>
+                        Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In<br> 
+                        libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas<br>
+                        sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. <br>
+                        Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. <br>
+                        <br><br>
+                        Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam <br>
+                        malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices <br>
+                        ante, a mattis massa. 
+                    </p>
+                    <div class="phone-market-link">
+                        <a href="#">
+                            <amp-img
+                                src="materials/app-store.png"
+                                alt="app-store"
+                                width="112"
+                                height="39"
+                            ></amp-img>
+                            <!-- <img alt="app-store" src="materials/app-store.png"> -->
+                        </a>
+                        <a href="#">
+                            <amp-img
+                                src="materials/google-play.png"
+                                alt="google-play"
+                                width="120"
+                                height="39"
+                            ></amp-img>
+                            <!-- <img alt="google-play" src="materials/google-play.png"> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banner3">
+                <amp-img
+                    src="materials/profile.png"
+                    alt="profile"
+                    width="114"
+                    height="114"
+                ></amp-img>
+                <!-- <img alt="profile" src="materials/profile.png"> -->
+                <p class="message">
+                    “I am so happy because I found this recipe, and it just made my life easier.<br>
+                    Thanks  so much for sharing!”<br><br>
+                </p>
+                <p class="autor">
+                    - Michael Dawson, San Francisco, CA -
+                </p>
+                <div class="points">
+                    <a href="#">
+                        <amp-img
+                            src="materials/fill_point.png"
+                            alt="fill-point"
+                            width="10"
+                            height="10"
+                        ></amp-img>
+                        <!-- <img alt="fill-point" src="materials/fill_point.png"> -->
+                    </a>
+                    <a href="#">
+                        <amp-img
+                            src="materials/point.png"
+                            alt="point"
+                            width="10"
+                            height="10"
+                        ></amp-img>
+                        <!-- <img alt="point" src="materials/point.png"> -->
+                    </a>
+                    <a href="#">
+                        <amp-img
+                            src="materials/point.png"
+                            alt="point"
+                            width="10"
+                            height="10"
+                        ></amp-img>
+                        <!-- <img alt="point" src="materials/point.png"> -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-banner4">
+                <div class="title-block">
+                    <p>browse by cuisines</p>
+                </div>
+                <div class="eat-block">
+                    <div class="eat" id="eat1">
+                        <p class="info">327 Recipes</p>
+                        <p class="title">Italian</p>
+                    </div>
+                    <div class="eat" id="eat2">
+                        <p class="info">856 Recipes</p>
+                        <p class="title">Indian</p>
+                    </div>
+                    <div class="eat" id="eat3">
+                        <p class="info">27 Recipes</p>
+                        <p class="title">French</p>
+                    </div>
+                    <div class="eat" id="eat4">
+                        <p class="info">174 Recipes</p>
+                        <p class="title">Steakhouse</p>
+                    </div>
+                    <div class="eat" id="eat5">
+                        <p class="info">731 Recipes</p>
+                        <p class="title">Seafood</p>
+                    </div>
+                    <div class="eat" id="eat6">
+                        <p class="info">237 Recipes</p>
+                        <p class="title">Sushi</p>
+                    </div>
+                    <div class="eat" id="eat7">
+                        <p class="info">529 Recipes</p>
+                        <p class="title">Mexican</p>
+                    </div>
+                    <div class="eat" id="eat8">
+                        <p class="info">145 Recipes</p>
+                        <p class="title">Chinese</p>
+                    </div>
+                    <div class="eat" id="eat9">
+                        <p class="info">327 Recipes</p>
+                        <p class="title">Pizza</p>
+                    </div>
+                    <div class="eat" id="eat10">
+                        <p class="info">1.437 Recipes</p>
+                        <p class="title">American</p>
+                    </div>
+                </div>
+                <div class="statistic-block">
+                    <div class="statistic">
+                        <p class="title">23,567</p>
+                        <p class="info">Recipes Available</p>
+                    </div>
+                    <div class="statistic">
+                        <p class="title">431,729</p>
+                        <p class="info">Active Users</p>
+                    </div>
+                    <div class="statistic">
+                        <p class="title">892,173</p>
+                        <p class="info">Positive Reviews</p>
+                    </div>
+                    <div class="statistic">
+                        <p class="title">56,581</p>
+                        <p class="info">Photos & Videos</p>
+                    </div>
+                    <div class="statistic">
+                        <p class="title">3,182</p>
+                        <p class="info">Spices and Herbs</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="company">©2014 Fudi. All Rights Reserved.</p>
+                <p class="autor">DESIGN BY: <b style="color: black;">WWW.BEKADES.COM</b></p>
+            </footer>
+        </main>
+    </body>
+</html>
